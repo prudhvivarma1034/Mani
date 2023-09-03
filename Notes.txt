@@ -1,0 +1,30 @@
+Components in Angular:
+- A Component in anagular is a typescript class.
+- Component class is having 3 things
+    - Import Statements :   Used to get the component related Library
+    - Decorator         :   Used to add the metadata for component.
+    - Export class      :   Make it available to another files.
+- To execute the component we should follow below steps
+    - Create Component
+    - Register the component in Module in declaration section.
+    - Bootstrap the component
+    - Invoke the component with Selector
+- To create a component we use a command "ng g c <nameOfComponent>"
+- It will create 4 files like
+    - *.component.ts    =>  Used for data 
+    - *.component.html  =>  Used for UI
+    - *.component.css   =>  Used for Styles
+    - *.component.spec.ts   Used for Unit Testing
+Note: To skip the specification file we use a command i.e. "ng g c <name> --skip-tests"\
+
+
+Modules:
+- In Angular Module is a typescript class which is having a decorator i.e. "NgModule".
+- Every item (Component, Directive,Pipe,Service etc.) in angular must be under the module.
+- @NgModule decorator is having following metadata information like
+    - declarations : Used to register angular elements like components,directives,pipes etc.
+    - imports : Used to import another modules into this modules.
+    - exports: Used to specify which items are able to access in another module.
+    - provides: Used to add the services.
+    - bootstrap: Used to specify which component is the starting component in execution, Here we can have one or more components in startup.
+
